@@ -26,7 +26,7 @@
 <gf:messageBundle bundle="grailsflow.common" var="common"/>
 <gf:messageBundle bundle="grailsflow.processNodeEditor" var="nodeEditor"/>
 
-<r:script>
+<asset:script>
 
   //Asynchronous call for addAssignees
   function callAddAssignees(button) {
@@ -151,7 +151,7 @@
     }
     document.getElementById(assigneesType+"_count").innerHTML="("+table.rows.length+")"
   }
-</r:script>
+</asset:script>
 
 
 <g:set var="assignees" value="${assignees?.assigneeID}"/>

@@ -20,13 +20,11 @@
          <gf:messageBundle bundle="grailsflow.common" var="common"/>
          <gf:messageBundle bundle="grailsflow.worklist" var="worklist"/>
          <title>${worklist['grailsflow.title.worklist']}</title>
+        <asset:javascript src="flow/app/worklist/worklist.js" />
     </head>
     <body>
       <gf:storeBackPoint />
       <h1>${worklist['grailsflow.label.worklist']}</h1>
-
-      <g:render plugin="grailsflow" template="/commons/messageInfo"/>
-
       <div class="row">
           <g:form name="worklistForm" method="GET"
             controller="${gf.currentController()}" action="${gf.currentAction()}">

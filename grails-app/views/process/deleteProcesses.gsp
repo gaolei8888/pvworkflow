@@ -21,7 +21,7 @@
   <gf:messageBundle bundle="grailsflow.processDetails" var="processDetails"/>
   <title>${processDetails['grailsflow.title.deleteProcesses']}</title>
 
-  <r:script>
+  <asset:script>
     jQuery('#deleteButton').click(function(){
       if (askConfirmation('${common['grailsflow.question.confirm']}')) {
         jQuery('#deleteButton').attr("disabled", true);
@@ -47,7 +47,7 @@
       }
     });
 
-  </r:script>
+  </asset:script>
 
 </head>
 

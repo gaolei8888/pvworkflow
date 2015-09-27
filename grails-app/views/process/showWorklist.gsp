@@ -19,7 +19,6 @@
     <g:render plugin="grailsflow" template="/commons/global"/>
     <g:if test="${params.isEmbedded == 'true'}">
       <meta name="layout" content="" />
-      <r:layoutResources/>
     </g:if>
     <g:else>
       <meta name="layout" content="grailsflow" />
@@ -28,7 +27,7 @@
     <gf:messageBundle bundle="grailsflow.worklist" var="worklist"/>
     <title>${worklist['grailsflow.title.worklist']}</title>
 
-    <r:script>
+    <asset:script>
       var variableValuesMap = {};
       <g:each var="name" in="${variableValues?.keySet()}">
         variableValuesMap["${name}"] = new Array();
@@ -72,7 +71,7 @@
         }
       }
 
-    </r:script>
+    </asset:script>
   </head>
 
   <body>
@@ -212,11 +211,11 @@
             </div>
           </g:if>
             <br/>
-            <r:script>
+            <asset:script>
               function reloadPage() {
                 window.location = "${g.createLink(controller: params['controller'], action: params['action'], params: params)}";
               }
-            </r:script>
+            </asset:script>
 
             <div class="buttons">
               <span class="button">
@@ -232,7 +231,6 @@
       </g:form>
 
       <g:if test="${params.isEmbedded == 'true'}">
-        <r:layoutResources/>
       </g:if>
   </body>
 </html>

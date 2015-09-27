@@ -22,7 +22,7 @@
          <gf:messageBundle bundle="grailsflow.processAction" var="msgs"/>
          <title>${msgs['grailsflow.title.actionEditor']}</title>
 
-         <r:script>
+         <asset:script>
            function pasteCode(textToPaste, movePosition) {
              var textArea = document.getElementById("actionsCode");
              var pos = textArea.selectionStart;
@@ -55,7 +55,7 @@
                "ParamsWindow", 'width=560, height=400, resizable=yes, scrollbars=yes, status=no')
            }
 
-         </r:script>
+         </asset:script>
 
     </head>
     <body>

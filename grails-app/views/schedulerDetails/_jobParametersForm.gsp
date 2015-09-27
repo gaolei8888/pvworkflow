@@ -1,7 +1,7 @@
 <gf:messageBundle bundle="grailsflow.schedulerDetails" var="msgs"/>
 <r:require modules="grailsflowDatepicker"/>
 
-<r:script>
+<asset:script>
    function checkSelection() {
      if (document.getElementById("repeating").value == '') {
        document.getElementById("customRepeating").style.display = ""
@@ -39,7 +39,7 @@
      }
      return true
    }
-</r:script>
+</asset:script>
 
 <div class="form-group">
   <label class="col-md-4 control-label" for="repeating">${msgs['grailsflow.label.repeating']}</label>
@@ -67,9 +67,9 @@
   </div>
 </div>
 
-<r:script>
+<asset:script>
   checkSelection()
-</r:script>
+</asset:script>
 <h4>${msgs['grailsflow.label.startTime']}</h4>
 
 <div class="form-group">

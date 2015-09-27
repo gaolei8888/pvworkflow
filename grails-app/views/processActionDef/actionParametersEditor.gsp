@@ -23,7 +23,7 @@
 
          <g:set var="parametersNames" value="${actionParameters.collect(){ it.name.inspect() } }"/>
 
-         <r:script>
+         <asset:script>
 
            var parameters = new Array(${parametersNames.join(", ")});
 
@@ -45,8 +45,7 @@
              window.close();
            }
 
-         </r:script>
-         <r:layoutResources/>
+         </asset:script>
     </head>
     <body>
       <div class="container">
@@ -66,7 +65,6 @@
                   <input type="button" class="btn btn-default" value="${common['grailsflow.command.cancel']}" onclick="window.close();"/>
                   <input type="button" class="btn btn-primary"  value="${common['grailsflow.command.apply']}" onclick="addAction();"/>
                 </div>
-                <r:layoutResources/>
               </div>
             </div>
         </div>

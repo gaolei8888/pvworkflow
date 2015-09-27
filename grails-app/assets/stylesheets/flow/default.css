@@ -50,7 +50,7 @@ iframe {
 /* Default forms behaviour */
 form {
   margin: 0px;
-  width: 99,9%;
+  width: 99.9%;
 }
 
 select {
@@ -77,7 +77,7 @@ input.button {
   color : #FFFFFF;
   text-align : center;
   height : 18px;
-  background: url(../../images/grailsflow/general/button.gif) repeat-x center;
+  /*background: url(../../images/flow/general/button.gif) repeat-x center;*/
   margin:0;
   padding: 0px 5px 0px 5px;
   width:0; /* IE table-cell margin fix */
@@ -118,7 +118,7 @@ fieldset {
 
 /* Default <a> behaviour */
 a {
-  text-decoration: underlined;
+  /*text-decoration: underlined;*/
   color: rgb(5,38,121);
 }
 
@@ -169,7 +169,7 @@ table.standard thead {
 
 table.standard th {
   padding: 5px 8px 6px 8px;
-  background: url(../../images/grailsflow/general/thBottom.gif) repeat-x bottom;
+  /*background: url('../../images/flow/general/thBottom.gif') repeat-x bottom;*/
   background-color: rgb(230,234,245);
   repeat-x: top;
   color: rgb(5,38,121);
@@ -212,7 +212,7 @@ div.body table.grid {
 
 table.grid th {
   font-size: 11px;
-  background: #E6EAF5 url(../../images/grailsflow/general/thBottom.gif ) repeat-x center bottom;
+  /*background: #E6EAF5 url(../../images/flow/general/thBottom.gif ) repeat-x center bottom;*/
   border-color: #7888B4 white;
   border-style: solid;
   border-width: 1px 1px 1px 0px;
@@ -228,7 +228,7 @@ div.body table {
 
 table th {
   font-size: 11px;
-  background: #E6EAF5 url(../../images/grailsflow/general/thBottom.gif ) repeat-x center bottom;
+  /*background: #E6EAF5 url(../../images/flow/general/thBottom.gif ) repeat-x center bottom;*/
   border-color: #7888B4 white;
   border-style: solid;
   border-width: 1px 1px 1px 0px;
@@ -251,11 +251,11 @@ table.grid th.asc a,
 }
 
 table.grid th.asc a {
-  background-image: url(../../images/grailsflow/general/sortUp.gif );
+  background-image: url(../../images/flow/general/sortUp.gif );
 }
 
 table.grid th.desc a {
-  background-image: url(../../images/grailsflow/general/sortDown.gif );
+  background-image: url(../../images/flow/general/sortDown.gif );
 }
 
 table.grid tr.even {
@@ -278,7 +278,7 @@ table.grid td {
 .required {
   color: #002276;
   font-weight: bold;
-  background: url(../../images/grailsflow/general/required.gif) top right no-repeat;
+  background: url(../../images/flow/general/required.gif) top right no-repeat;
   padding-right: 5px;
 }
 
@@ -321,7 +321,7 @@ table.grid td {
 
 .toggle {
   font-weight : bold;
-  cursor: pointer; 5px;
+  cursor: pointer;
   text-decoration: underline;
   color: #003366;
   float: right;
@@ -394,7 +394,7 @@ form.standard h3 {
 
 form.standard .required {
   color: #002276;
-  background: url(../../images/grailsflow/general/required.gif) top right no-repeat;
+  background: url(../../images/flow/general/required.gif) top right no-repeat;
   padding-right: 7px;
 }
 
@@ -506,13 +506,13 @@ td.labelColumn {
 }
 
 .actionButton {
-  display: ;
+  display: inherit;
 }
 
 .actionLabel {
   vertical-align: top;
   text-align: center;
-  display: screen;
+  display: inherit;
   font-size: 8pt;
 }
 
@@ -537,13 +537,13 @@ td.labelColumn {
 }
 
 a.nextLink {
-  background: url(../../images/grailsflow/general/next.gif ) center right no-repeat;
+  background: url(../../images/flow/general/next.gif ) center right no-repeat;
   padding-right: 15px;
   margin: 0 0 0 10px;
 }
 
 a.prevLink {
-  background: url(../../images/grailsflow/general/previous.gif ) center left no-repeat;
+  background: url(../../images/flow/general/previous.gif ) center left no-repeat;
   padding-left: 15px;
 }
 
@@ -567,7 +567,7 @@ a.prevLink {
   text-align: left;
   color: #002276;
   white-space:nowrap;
-  background:transparent url(../../images/grailsflow/general/plus.gif) no-repeat scroll left center;
+  background:transparent url(../../images/flow/general/plus.gif) no-repeat scroll left center;
   cursor:default;
   text-decoration:none;
   white-space:nowrap;
@@ -582,7 +582,7 @@ a.prevLink {
   text-align: left;
   color: #002276;
   white-space:nowrap;
-  background:transparent url(../../images/grailsflow/general/minus.gif) no-repeat scroll left center;
+  background:transparent url(../../images/flow/general/minus.gif) no-repeat scroll left center;
   cursor:default;
   text-decoration:none;
   white-space:nowrap;

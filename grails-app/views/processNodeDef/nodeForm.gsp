@@ -21,7 +21,7 @@
          <gf:messageBundle bundle="grailsflow.processNodeEditor" var="msgs"/>
          <gf:messageBundle bundle="grailsflow.processVariableEditor" var="varMsgs"/>
          <title>${msgs['grailsflow.title.processNode']}</title>
-         <r:script>
+         <asset:script>
            function showRules() {
              window.open("${g.createLink(action:'showPageRules')}", "PageRules", 'width=650, height=700, resizable=yes, scrollbars=yes, status=no')
            }
@@ -53,7 +53,7 @@
              document.getElementById("pageName").value = arg
            }
 
-         </r:script>
+         </asset:script>
     </head>
     <body>
       <h1>${msgs['grailsflow.label.processNode']}</h1>

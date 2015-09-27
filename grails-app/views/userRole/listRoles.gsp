@@ -20,7 +20,7 @@
          <gf:messageBundle bundle="grailsflow.userRoles" var="msgs"/>
          <title>${msgs['grailsflow.title.roles']}</title>
          <r:require modules="jquery" />
-         <r:script>
+         <asset:script>
            function addRole(role) {
              opener.addRoles(role)
            }
@@ -29,8 +29,7 @@
              addRole(role);
              window.close;
            }
-         </r:script>
-         <r:layoutResources/>
+         </asset:script>
     </head>
 
     <body>
@@ -56,6 +55,5 @@
 	    </div>
       </div>
     </div>
-    <r:layoutResources/>
     </body>
 </html>

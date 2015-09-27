@@ -37,7 +37,6 @@
 <h1>${msgs['grailsflow.label.processVars']}</h1>
 
 <g:setProvider library="jquery"/>
-<r:require modules="grailsflowDatepicker" />
 
 <g:each in="${variables.values()}" var="variable">
 

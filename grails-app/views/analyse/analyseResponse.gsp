@@ -20,9 +20,9 @@
          <gf:messageBundle bundle="grailsflow.common" var="common"/>
          <gf:messageBundle bundle="grailsflow.processDetails" var="processDetails"/>
 
-         <r:require modules="grailsflowJgplot"/>
+         <asset:stylesheet src="jqplot/jquery.jqplot.min.js" />
 
-         <r:script>
+         <asset:script>
              var data = evalJson('${processTypeProtocol}')
 
              if (data && data.length > 0) {
@@ -104,7 +104,7 @@
                return '#000000'.slice(0, -color.length) + color;
              }
 
-         </r:script>
+         </asset:script>
          <style>
             table.jqplot-table-legend {
                 display: block;

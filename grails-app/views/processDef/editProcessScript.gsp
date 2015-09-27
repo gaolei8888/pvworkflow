@@ -53,7 +53,7 @@
                                 }
                               });
                               var hlLine = editor.setLineClass(0, "activeline");
-                          </r:script>
+                          </asset:script>
                         </td>
                       </tr>
                     </tbody>

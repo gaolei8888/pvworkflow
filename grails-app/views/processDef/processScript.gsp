@@ -22,10 +22,10 @@
          <gf:messageBundle bundle="grailsflow.common" var="common"/>
          <gf:messageBundle bundle="grailsflow.processDetails" var="msgs"/>
 
-         <r:script>
+         <asset:script>
              SyntaxHighlighter.config.tagName = 'textarea';
              SyntaxHighlighter.all();
-         </r:script>
+         </asset:script>
 
          <title>${msgs['grailsflow.title.processScript']}</title>
     </head>

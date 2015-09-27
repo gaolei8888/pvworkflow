@@ -28,7 +28,7 @@
 
     }
 
-  </r:script>
+  </asset:script>
 </head>
 
 <body>

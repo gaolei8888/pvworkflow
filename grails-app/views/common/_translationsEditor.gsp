@@ -29,7 +29,7 @@
 	  * rows									rows size of textarea input. Default is 5
  -->
  
-  <r:script>
+  <asset:script>
     function addTranslation(parameterName){
       var langSelect = document.getElementById('add_'+parameterName+'_lang')
       var lang = langSelect.value
@@ -106,7 +106,7 @@
       }
     }
     
-  </r:script>
+  </asset:script>
 
   <gf:messageBundle bundle="grailsflow.common" var="common"/>
 

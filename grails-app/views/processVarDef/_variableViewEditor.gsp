@@ -22,7 +22,7 @@
 
  -->
 
-<r:script>
+<asset:script>
   function changeViewType() {
     var typeElement = document.getElementById('variableViewType')
     var selectedType = typeElement.value
@@ -35,7 +35,7 @@
 	    }
     }
   }
-</r:script>
+</asset:script>
 
 <g:set var="supportedViewTypes" value="${com.jcatalog.grailsflow.model.view.VariableView.supportedViewTypes}"/>
 

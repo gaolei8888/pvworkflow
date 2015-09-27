@@ -19,7 +19,6 @@
          <g:render plugin="grailsflow" template="/commons/global"/>
          <gf:messageBundle bundle="grailsflow.processDetails" var="msgs"/>
          <title>${msgs['grailsflow.title.showRules']}</title>
-         <r:layoutResources/>
     </head>
     <body>
       <div class="container">

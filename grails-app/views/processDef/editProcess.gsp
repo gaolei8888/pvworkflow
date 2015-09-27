@@ -25,11 +25,11 @@
          <title>${msgs['grailsflow.title.processEditor']}</title>
 
          <r:require modules="grailsflowDatepicker"/>
-         <r:script>
+         <asset:script>
            function openGraphic(id) {
              window.open("${g.createLink(action:'showGraphic')}?processID="+id, "GraphicProcess", 'width=700, height=500, resizable=yes, scrollbars=yes, status=no')
            }
-         </r:script>
+         </asset:script>
 
     </head>
     <body>

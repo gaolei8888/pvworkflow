@@ -44,7 +44,7 @@
 
     <g:set var="authority_type" value="${switchParameterName ? switchParameterName : 'authority_type'}"/>
 
-    <r:script>
+    <asset:script>
       function switchAuthoritiesType(selectedType) {
         document.getElementById('div_users').style.display = selectedType == 'users' ? '' : 'none'
         document.getElementById('div_roles').style.display = selectedType == 'roles' ? '' : 'none'
@@ -148,7 +148,7 @@
         window.open("${g.createLink(controller: 'userRole', action:'listGroups')}", "ParamsWindow", 'width=450, height=400, resizable=yes, scrollbars=yes, status=no')
       }      
       
-    </r:script>
+    </asset:script>
     
     <gf:messageBundle bundle="grailsflow.userRoles" var="userRoles"/>
     

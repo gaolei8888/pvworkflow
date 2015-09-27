@@ -20,7 +20,7 @@
          <gf:messageBundle bundle="grailsflow.userRoles" var="msgs"/>
          <title>${msgs['grailsflow.title.groups']}</title>
          <r:require modules="jquery" />
-         <r:script>
+         <asset:script>
            function addGroup(group) {
              opener.addGroups(group)
            }
@@ -29,8 +29,7 @@
              addGroup(group);
              window.close;
            }
-         </r:script>
-         <r:layoutResources/>
+         </asset:script>
     </head>
 
     <body>
@@ -56,6 +55,5 @@
         </div>
 	  </div>
     </div>
-    <r:layoutResources/>
     </body>
 </html>

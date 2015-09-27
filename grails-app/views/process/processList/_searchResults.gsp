@@ -24,11 +24,11 @@
 <gf:messageBundle bundle="grailsflow.common" var="common"/>
 <gf:messageBundle bundle="grailsflow.processDetails" var="processDetails"/>
 
-<r:script>
+<asset:script>
     function openGraphic(id) {
        window.open("${g.createLink(controller: "process", action:'showGraphic')}?processID="+id, "GraphicProcess", 'width=800, height=500, resizable=yes, scrollbars=yes, status=no')
     }
-</r:script>
+</asset:script>
 
 <g:set var="format" value="${new java.text.SimpleDateFormat('yyyy.MM.dd')}"/>
 

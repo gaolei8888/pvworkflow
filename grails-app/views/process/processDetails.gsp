@@ -22,11 +22,11 @@
          <gf:messageBundle bundle="grailsflow.processVariableEditor" var="varMsgs"/>
          <title>${msgs['grailsflow.title.processDetails']}</title>
 
-         <r:script>
+         <asset:script>
            function openGraphic(id) {
                window.open("${g.createLink(controller: "process", action:'showGraphic')}?processID="+id, "GraphicProcess", 'width=700, height=500, resizable=yes, scrollbars=yes, status=no')
            }
-         </r:script>
+         </asset:script>
     </head>
     <body>
       <h1>${msgs['grailsflow.title.processDetails']}</h1>
@@ -106,11 +106,11 @@
       <div class="row">
         <div class="form-submit text-right">
           <g:actionSubmit action="list" value="${common['grailsflow.command.back']}" class="btn btn-link" />
-          <r:script>
+          <asset:script>
                    function reloadPage() {
                        window.location = "${g.createLink(controller: params['controller'], action: params['action'], params: params)}";
                    }
-          </r:script>
+          </asset:script>
           <input type="button" onclick="reloadPage();"
             value="${common['grailsflow.command.refresh']}" class="btn btn-default" />
           <input type="button" class="btn btn-primary" value="${msgs['grailsflow.command.showGraphicEditor']}" onclick="openGraphic('${processDetails.id}'); return false;"/>

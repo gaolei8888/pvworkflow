@@ -24,7 +24,7 @@
     * showOperations        boolean flag for enabling/disabling operations links in list ("edit", "delete", etc). Default is false
  -->
 
-<r:script>
+<asset:script>
   function orderMoveNodeUp(id) {
       jQuery.ajax({
           url: "${request.contextPath}/processNodeDef/orderMoveUp/"+id ,
@@ -78,7 +78,7 @@
     // Moving down is moving next row up
     moveNodeUp(eval(json.oldOrder) + 1)
   }
-</r:script>
+</asset:script>
  
  
 <g:set var="showOperations" value="${showOperations != null ? showOperations : false}"/>

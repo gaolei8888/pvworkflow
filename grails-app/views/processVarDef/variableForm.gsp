@@ -23,7 +23,7 @@
       <gf:messageBundle bundle="grailsflow.list" var="listType"/>
       <title>${msgs['grailsflow.title.processVars']}</title>
 
-      <r:script>
+      <asset:script>
         function updateVarView(){
             document.getElementById("objectType").style.display="none"
             var varID = document.getElementById('varID').value
@@ -31,7 +31,7 @@
             ${g.remoteFunction(controller: params['controller'], action: "changeVarInput", id: process.id,
                 update: 'variableView', params:"'varID='+varID+'&varType='+varType" )}
         }
-      </r:script>
+      </asset:script>
       <r:require modules="grailsflowDatepicker"/>
     </head>
     <body>

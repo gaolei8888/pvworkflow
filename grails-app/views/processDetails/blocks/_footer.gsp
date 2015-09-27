@@ -24,12 +24,12 @@
 <gf:messageBundle bundle="grailsflow.common" var="common"/>
 <gf:messageBundle bundle="grailsflow.processDetails" var="msgs"/>
 
-<r:script>
+<asset:script>
   function openGraphic() {
     window.open("${g.createLink(controller: "process", action:'showGraphic')}?processID="+${processDetails.id}, "GraphicProcess", 'width=700, height=500, resizable=yes, scrollbars=yes, status=no');
     return false;
   }
-</r:script>
+</asset:script>
 
 <div class="buttons">
 

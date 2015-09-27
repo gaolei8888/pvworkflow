@@ -20,9 +20,8 @@
   <title>Process Graphical View</title>
 
   <r:require modules="grailsflowGraphics"/>
-  <r:layoutResources/>
 
-  <r:script>
+  <asset:script>
     function evalJson(json) {
       try {
         return eval("(" + json + ")");
@@ -36,7 +35,7 @@
            id: processID, params:"'positions='+info")}
     }
 
-  </r:script>
+  </asset:script>
 
 </head>
 <body>
@@ -49,7 +48,7 @@
     </div>
     <input type="hidden" name="id" value="${processID}"/>
   </g:form>
-  <r:script>
+  <asset:script>
 
      var workflow  = new draw2d.Workflow("paintarea")
      workflow.html.style.backgroundImage="";
@@ -158,7 +157,6 @@
         }
 
      }
-  </r:script>
-  <r:layoutResources/>
+  </asset:script>
 </body>
 </html>

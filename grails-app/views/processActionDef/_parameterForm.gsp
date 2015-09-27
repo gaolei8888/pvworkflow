@@ -20,7 +20,7 @@
    variables          collection of process variables
 -->
 
-<r:script>
+<asset:script>
    function ${param.name}ParamTypeChange() {
        var propsTable = document.getElementById("propsTable")
 
@@ -59,7 +59,7 @@
    function ${param.name}DefaultValue() {
       return document.getElementById("default_${param.name}").value;
    }
-</r:script>
+</asset:script>
 
 <td valign="top" align="right">${param.name}</td>
 <td valign="top" align="left">

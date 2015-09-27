@@ -18,14 +18,9 @@
     <title>
       <g:layoutTitle default="Grailsflow"/>
     </title>
-
-    <r:require modules="grailsflow"/>
-    <r:require modules="bootstrap"/>
-    <r:require modules="font-awesome"/>
-    <r:layoutResources/>
-
+    <asset:javascript src="application.js" />
+    <asset:stylesheet src="application.css" />
     <gf:messageBundle bundle="grailsflow.menu" var="menu_bundle"/>
-
     <g:layoutHead/>
   </head>
   <body>
