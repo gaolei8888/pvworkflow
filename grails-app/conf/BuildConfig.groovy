@@ -47,12 +47,13 @@ grails.project.dependency.resolution = {
     plugins {
         // plugins for the build system only
         build   ":tomcat:7.0.55"
-        build   ":release:3.0.1"
+        build   ":release:3.1.1"
 
         runtime ":hibernate:3.6.10.18"
         runtime(":resources:1.2.8",
                 ":jquery:1.11.1",
                 ":jquery-ui:1.10.4")
+
         runtime ':font-awesome-resources:4.3.0.1'
         compile ":twitter-bootstrap:3.3.1"
         compile ":export:1.6"
